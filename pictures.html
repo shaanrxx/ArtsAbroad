@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/093248551b.js" crossorigin="anonymous"></script>
+    <title>(SH)AAR(N)HUS: PICTURES</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<style>
+/*css for week 5 gallery layout*/
+.gallery {
+  /*creates a flex box container to put items in*/
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.gallery-item {
+  /*splits gallery into four columns using percentages as there are four sets of items*/
+  -ms-flex: 25%;
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-item img {
+  /*positions and aligns images*/
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*Responsive layout - text uses flexbox and menu chnages size, gallery is responsive to size of page and turns into two columns then one*/
+
+@media all and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px
+  }
+
+  .logo {
+    width: 100px;
+    height: 15px;
+  }
+
+  .footer {
+    position: fixed
+  }
+
+  p {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 15px;
+    display: flex;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    padding: 0 4px;
+  }
+
+  .gallery-item {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
+
+
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+
+  /* sidebars to share a row */
+  .aside {
+    flex: 1 auto;
+  }
+
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+
+  /* Change order of the aside and main, and main takes up twice as much space as asides */
+  .main {
+    flex: 3 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+}
+
+
+</style>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">(SH)AAR(N)HUS</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./work.html">Work</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./activities.html">Activities</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./pictures.html">Pictures</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.linkedin.com/in/shaan-rehsi-4b40561b3/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/shapesandjapes_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@shapesandjapes"><i class="fab fa-tiktok"></i></a>
+                        <a href="mailto:shaanr@hotmail.co.uk"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <section class="site-title-picture">
+            <div class="site-background-picture" data-aos="fade-up" data-aos-delay="1000">
+                <h1 style="color:white;  font-size: 100px;">Photo Gallery </h1>
+                <h3 style="color:white;font-size: 30px">Some of my favourite photos I took </h3>
+             
+
+                <!-- <button class="btn">Explore</button> -->
+            </div>
+        </section>
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <section>
+            <div class="gallery">
+                <!--gallery-item" div contains several img tags, each with a different source file for the image.-->
+                <div class="gallery-item "  data-aos="fade-left" data-aos-delay="500">
+                  <img src="pictures/square1.jpg" data-aos="fade-left" data-aos-delay="500" alt="cat">
+                  <img src="pictures/square2.jpg" data-aos="fade-right" data-aos-delay="500"alt="cat">
+                  <img src="pictures/square3.jpg" data-aos="fade-left" data-aos-delay="500"alt="cat">
+                  <img src="pictures/square4.jpg"  data-aos="fade-right" data-aos-delay="500"alt="cat">
+                </div>
+                <div class="gallery-item"  data-aos="fade-right" data-aos-delay="500">
+                  <img src="pictures/square5.jpg" data-aos="fade-right" data-aos-delay="500"alt="cat">
+                  <img src="pictures/square6.jpg" data-aos="fade-left" data-aos-delay="500"alt="cat">
+                  <img src="pictures/square7.jpg" data-aos="fade-right" data-aos-delay="500"alt="cat">
+                  <img src="pictures/square8.jpg" data-aos="fade-left" data-aos-delay="500" alt="cat">
+                </div>
+                <div class="gallery-item"  data-aos="fade-left" data-aos-delay="500">
+                  <img src="pictures/square9.jpg" data-aos="fade-left" data-aos-delay="500" alt="cat">
+                  <img src="pictures/square10.jpg"  data-aos="fade-right" data-aos-delay="500"alt="cat">
+                  <img src="pictures/square11.jpg"  data-aos="fade-left" data-aos-delay="500"alt="cat">
+                  <img src="pictures/square12.jpg" data-aos="fade-right" data-aos-delay="500" alt="cat">
+                </div>
+                <div class="gallery-item"    data-aos="fade-right" data-aos-delay="500">
+                    <img src="pictures/square13.jpg" data-aos="fade-right" data-aos-delay="500" alt="cat">
+                    <img src="pictures/square14.jpg" data-aos="fade-left" data-aos-delay="500" alt="cat">
+                    <img src="pictures/square15.jpg" data-aos="fade-right" data-aos-delay="500"alt="cat">
+                    <img src="pictures/square16.png" data-aos="fade-left" data-aos-delay="500" alt="cat">
+
+                </div>
+              </div>
+              </div>
+              </section>
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+
+        <!-- ---------------------- Site Content -------------------------->
+
+       
+
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About</h2>
+                <p>After receiving a grant by my university to study in Aarhus, Denmark I wanted to make sure I made the most of this opportunity. I am currently about to go into my third year studying Creative Computing at University of the Arts London but wanted to do something to further my studies during the summer. I applied through my university to study a two week course learning software design in C++ with the creator the language, Bjarne Stroupstup at Aarhus Unviversity. Coding is a passion and great interest of mine so I was incredibly excited for this opportunity. As I had never been to Denmark before I also took this time as a chance to get to know the city and be a tourist. Browse my page to find out about everything I did!</p>
+            </div>
+    
+            <div class="contact-left" data-aos="fade-left" data-aos-delay="200">
+                <h2>Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+
+                <a href="/image/Shaan Rehsi CV 2023.pdf" download class="btn btn2">Download CV</a>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shaan-rehsi-4b40561b3/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shapesandjapes_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@shapesandjapes"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:shaanr@hotmail.co.uk"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+               
+            </div>
+    
+            <div class="contact-right" data-aos="fade-left" data-aos-delay="200">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="FirstName" placeholder="First Name:" required>
+                    <input type="text" name="LastName" placeholder="Surname:" required>
+                    <input type="email" name="email" placeholder="Email:" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message:"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2023 All rights reserved | made by
+                <a href="https://cci.arts.ac.uk/~shrehsi/portfolio/index2.html" target="_blank">Shaan K Rehsi</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+    
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5k_VanyFZIfU0IT9e7FIOOxLgJ7_Cpw1TycQjwR4BaKXuepf-lAtmw4A9uuy3S2IKUw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>

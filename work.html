@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/093248551b.js" crossorigin="anonymous"></script>
+    <title>(SH)AAR(N)HUS: WORK</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<!-- Add these styles to your existing CSS or in a <style> tag -->
+    <style>
+        .move-up, .move-down {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .move-up:hover, .move-down:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    
+        .move-up {
+            top: 100px;
+        }
+    
+        .move-down {
+            bottom: 50px;
+        }
+
+        .btn-top{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  border:none;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: white;
+  color: purple;
+}
+
+
+.about-col-1{
+    padding:100px;
+}
+/* Responsive Site Title */
+@media screen and (max-width: 768px) {
+    .site-background h3,
+    .site-background h1 {
+        font-size: 1.2rem;
+    }
+
+    .tab-titles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tab-links {
+            
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .tab-contents {
+            display: none; /* Hide tab contents by default on smaller screens */
+            padding: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Show active tab content */
+        .tab-contents.active-tab {
+            display: block;
+        }
+
+        .tab-contents {
+    margin-top: 20px;
+  }
+      
+    .tab-contents-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Adjust the number of columns as needed */
+        grid-gap: 20px; /* Adjust the gap between tab contents */
+    }
+
+    .tab-contents {
+        max-width: 100%;
+        padding: 10px; /* Example */
+        margin-top: 20px; /* Add margin to create spacing between tab contents */
+     
+    }
+  
+    /* Adjust the padding and margin values as needed */
+    #about-work .tab-contents {
+        padding: 20px; /* Add padding to prevent overlapping */
+        margin-top: 20px; /* Add margin to create space between tab contents */
+    }
+
+    .about-section{
+        height:190vh;
+    }
+
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+    .tab-contents-container {
+        display: block;
+    }
+    .tab-contents {
+        /* Adjust styles for smaller screens */
+        padding: 10px; /* Example */
+        /* Other styling... */
+    }
+
+}
+
+
+
+
+    </style>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">(SH)AAR(N)HUS</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./work.html">Work</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./activities.html">Activities</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./pictures.html">Pictures</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.linkedin.com/in/shaan-rehsi-4b40561b3/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/shapesandjapes_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@shapesandjapes"><i class="fab fa-tiktok"></i></a>
+                        <a href="mailto:shaanr@hotmail.co.uk"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <section class="site-title-work">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="2000">
+                <!-- <ul class="nav-list">
+                    <li  class="nav-item"><a  href="#header">WORK: Studying C++</a></li> 
+                    <li class="nav-item"><a href="#about-work">About the Course</a></li> 
+                    <li class="nav-item"><a href="#assignments">Assignments/ Essay</a></li>
+                </ul>  -->
+                    <h3 style="color:black">Learning C++ at Summer School:</h3>
+                    <h1 style="color:black">5 Assignments </h1>
+                    <h1 style="color:black">1 essay</h1>
+                    <h1 style="color:black">10 days of lectures</h1>
+            
+                    <!-- <button class="btn">Explore</button> -->
+                </div>
+            </div>
+        </section> 
+
+<!---------------------------------  ABOUt -------------------------------->
+
+
+
+        <section  class="about-section">
+        <div id="about-work">
+            <div class="posts">
+                <div class="blog">
+                    
+                    <div class="container" data-aos="fade-right" data-aos-delay="200">
+                        <h2 style=" color:black" class="sub-title">About</h2>
+                        <p style=" color: gray"> The C++ course spanned two weeks and encompassed a total of six assignments, which included an essay on a topic of personal choice. The course presented itself as notably more demanding than I initially anticipated. It delved into various complex concepts and the underlying philosophy of C++, all while necessitating the creation of intricate programs within a short span of time.
+                            Although I had some prior exposure to C++, my previous interactions had not delved deeply into its intricacies. As a result, I encountered challenges that pushed me to my limits. Despite these difficulties, I persevered and successfully completed all of the assignments. In the sections that follow, I provide an overview of each assignment and my experience in tackling it. If you're interested in delving deeper, you can access the downloadable code and assignments I did.
+                            </p>
+          
+                        <div style="justify-content:center; " class="tab-titles">
+                            <p style="color:black" class="tab-links active-link" onclick="opentab('A1')">Assignment 1</p>
+                            <p style="color:black" class="tab-links" onclick="opentab('A2')">Assignment 2</p>
+                            <p style="color:black" class="tab-links" onclick="opentab('A3')">Assignment 3</p>
+                            <p style="color:black" class="tab-links" onclick="opentab('A4')">Assignment 4</p>
+                            <p  style="color:black"class="tab-links" onclick="opentab('A5')">Assignment 5 </p>
+                            <p  style="color:black" class="tab-links" onclick="opentab('A6')">Assignment 6</p>
+                        </div>
+                      
+                     
+                            
+                        <div  class="tab-contents active-tab" id="A1">
+                            <ul>
+                                <li><span>Assignment 1: Tool Chain</span><br>This first assignment was a simple start to course and required a 'hello world' program with a few experiments. It was a warm start to the course which I liked.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="A2">
+                            <ul>
+                                <li><span>Assignment 2: Measurment</span><br>I was required to conduct microbenchmarks for simple linear search algorithms on various scenarios using the std::find() and std::find_if() functions. I enjoyed the process of implementing and running these algorithms and observing their run times. It's satisfying to see my code work effectively and produce accurate results within reasonable timeframes. The use of standard library functions like std::find() and std::find_if() greatly simplifies the process of implementing search algorithms.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="A3">
+                          <ul>
+                              <li><span>Assignment 3: Concurrency</span><br>I implemented the find_all() algorithm, which identifies elements meeting specific criteria and returns their pointers in a vector. Evaluating its performance, I timed its execution on both large vector<int> and vector<string> datasets. Additionally, I developed a parallel version by employing 10 threads to concurrently run the find_all() operation on distinct segments of the data. I enjoyed this assignment as I was able to see the effectiveness of thread-based parallelism in data.</li>
+                          </ul>
+                      </div>
+                        <div class="tab-contents" id="A4">
+                            <ul>
+                                <li><span>Assignment 4: List vs Vector</span><br>This assignment was a significant challenge that required me to implement and compare different data structures in terms of performance. The task involved generating a sequence of distinct random integers and inserting them in their proper order, then gradually removing elements from random positions. I conducted experiments using std::list, std::vector, and std::set (tree structure) to observe their performance differences. This undertaking was quite time-consuming, as gathering data for different numbers of elements took up to 10 minutes per iteration. Nonetheless, it was fascinating to find how each data structure exhibited distinct behaviours and timings. The insights gained from these experiments emphasised the critical role that data structures play in determining the efficiency of various algorithms.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="A5">
+                          <ul>
+                              <li><span>Assignment 5: Generic Programming</span><br> This assignment proved to be quite challenging for me, as working with matrices required careful consideration of various operations and generic implementations. I started by defining a 2D matrix of ints, Imatrix, which included default construction, assignment operators, subscripting capabilities, arithmetic operations (+, *, /, -, %), and specialised functions like Move, Row, and Column. I took care to ensure that the matrix didn't leak memory and handled exceptions for range errors. In the second part of the assignment, I generalised the matrix to take an element type T as a parameter. While implementing these functionalities, I encountered difficulties in managing generic types and ensuring proper behaviour for each operation. I tested the implementations with Matrix<int>, Matrix<string>, and Matrix<Chess_piece>, the latter of which required further adjustments due to the nature of the Chess_piece type.</li>
+                          </ul>
+                      </div>
+                      <div class="tab-contents" id="A6">
+                        <ul>
+                            <li><span>Assignment 6: Essay</span><br>
+                                For my personal choice essay on the topic of C++, I decided to conduct a comprehensive comparison between elements of C++, Python, and Java. The objective was to discern the strengths and weaknesses inherent in each language, potentially determining which one stands out as superior. I delved into various aspects such as language features, paradigms, and application domains to understand the nuanced design choices of these languages. Furthermore, I explored the evolving landscape of coding languages and investigated the feasibility of integrating different languages. This essay proved to be an enlightening experience, offering me insights into the specific contexts where each language excels and allowing me to appreciate the overall utility of C++. </li>
+                        </ul>
+                    </div>
+                </div>
+                   
+            </div>
+        </div>
+            
+
+        </section>
+
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <section id="assignments" class="assignments-section">
+            <div  class="blog">
+                <div  class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div  class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./image/work1.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3 style="color:black">Assignment 1</h3>
+                                <a href="./image/747993_SHAANREHSI_A2.pdf" download class="btn btn-blog">Download PDF</a>
+                                <!-- <p>This first assignment was simply setting up C++ and creating a simple 'hello world' project with some experimemts</p> -->
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="./image/work2.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3 style="color:black">Assignment 2</h3>
+                                <a href="./image/747993_SHAANREHSI_A2.pdf" download class="btn btn-blog">Download PDF</a>
+                                <a href="./image/a2.zip" download class="btn btn-blog">Download Code</a>
+                            
+                            </div>
+                        
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./image/work3.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3 style="color:black">Assignment 3</h3>
+                                <a href="./image/747993_SHAANREHSI_A3.pdf" download class="btn btn-blog">Download PDF</a>
+                                <a href="./image/a3.zip" download class="btn btn-blog">Download Code</a>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./image/work4.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3 style="color:black">Assignment 4</h3>
+                                <a href="./image/747993_SHAANREHSI_A4.pdf" download class="btn btn-blog">Download PDF</a>
+                                <a href="./image/a4.zip" download class="btn btn-blog">Download Code</a>
+                              
+                            </div>
+                        </div>
+                            <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                                <img src="./image/work5.png" alt="post-1">
+                                <div class="blog-title">
+                                    <h3 style="color:black">Assignment 5</h3>
+                                    <a href="./image/747993_SHAANREHSI_A5 (1).pdf" download class="btn btn-blog">Download PDF</a>
+                                    <a href="./image/a5.zip" download class="btn btn-blog">Download Code</a> 
+                                </div>
+                            </div>
+                                <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                                    <img src="./image/work6.png" alt="post-1">
+                                    <div class="blog-title">
+                                        <h3 style="color:black">Assignment 6: Essay</h3>
+                                        <a href="./image/747993_SHAANREHSI_A6 (1).pdf" download class="btn btn-blog">Download PDF</a>
+                                       
+                                    </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+              
+            </div>
+        </section>
+
+        <div class="owl-navigation">
+            <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+            <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+        </div>
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+
+        <!-- ---------------------- Site Content -------------------------->
+
+
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About</h2>
+                <p>After receiving a grant by my university to study in Aarhus, Denmark I wanted to make sure I made the most of this opportunity. I am currently about to go into my third year studying Creative Computing at University of the Arts London but wanted to do something to further my studies during the summer. I applied through my university to study a two week course learning software design in C++ with the creator the language, Bjarne Stroupstup at Aarhus Unviversity. Coding is a passion and great interest of mine so I was incredibly excited for this opportunity. As I had never been to Denmark before I also took this time as a chance to get to know the city and be a tourist. Browse my page to find out about everything I did!</p>
+            </div>
+    
+            <div class="contact-left" data-aos="fade-left" data-aos-delay="200">
+                <h2>Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+
+                <a href="/image/Shaan Rehsi CV 2023.pdf" download class="btn btn2">Download CV</a>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shaan-rehsi-4b40561b3/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shapesandjapes_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@shapesandjapes"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:shaanr@hotmail.co.uk"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+               
+            </div>
+    
+            <div class="contact-right" data-aos="fade-left" data-aos-delay="200">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="FirstName" placeholder="First Name:" required>
+                    <input type="text" name="LastName" placeholder="Surname:" required>
+                    <input type="email" name="email" placeholder="Email:" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message:"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2023 All rights reserved | made by
+                <a href="https://cci.arts.ac.uk/~shrehsi/portfolio/index2.html" target="_blank">Shaan K Rehsi</a>
+            </h4>
+        </div>
+        
+    </footer>
+    
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+      
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+            
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+      </script>
+      
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5k_VanyFZIfU0IT9e7FIOOxLgJ7_Cpw1TycQjwR4BaKXuepf-lAtmw4A9uuy3S2IKUw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll(".section");
+        const moveUpButtons = document.querySelectorAll(".move-up");
+        const moveDownButtons = document.querySelectorAll(".move-down");
+
+        moveUpButtons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                if (index > 0) {
+                    sections[index - 1].scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+
+        moveDownButtons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                if (index < sections.length - 1) {
+                    sections[index + 1].scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>
